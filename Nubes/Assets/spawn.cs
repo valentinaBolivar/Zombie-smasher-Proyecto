@@ -8,6 +8,7 @@ public class spawn : MonoBehaviour
     public float segundoSpawn = -0.5f;
     public float bordeMin;
     public float bordeMax;
+    public float velocidadJuego = 3;
     void Start()
     {
         StartCoroutine(EnemySpawn());
@@ -23,5 +24,10 @@ public class spawn : MonoBehaviour
             yield return new WaitForSeconds(segundoSpawn);
           
         }
+
+
+        
     }
+
+
 }

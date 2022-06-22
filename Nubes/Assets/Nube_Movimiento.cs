@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class Nube_Movimiento : MonoBehaviour
 {
-    private float velocidadMovimiento = 2;
+    public float velocidadMovimiento = 2;
     public Transform[] puntosMovimiento;
     private float distanciaMin = 1;
     private int enOrden = 0;
     private SpriteRenderer spriteRenderer;
+
+ 
 
 
     // Start is called before the first frame update

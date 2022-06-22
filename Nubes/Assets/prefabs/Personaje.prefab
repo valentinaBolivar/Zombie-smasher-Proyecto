@@ -13,7 +13,9 @@ GameObject:
   - component: {fileID: 1389949249019394418}
   - component: {fileID: 4769826765815303844}
   - component: {fileID: -7935225329423555773}
-  - component: {fileID: -5961939010710918902}
+  - component: {fileID: -7223431955344582556}
+  - component: {fileID: 1375900766571661342}
+  - component: {fileID: -1521487917507615257}
   m_Layer: 0
   m_Name: Personaje
   m_TagString: Untagged
@@ -118,9 +120,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puntosMovimiento:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1921954961544872533, guid: 3d3b580719100154198bdf3a5bfbfa40, type: 3}
+  - {fileID: 1700901419000328252, guid: 863161bf2c465a04fae7c393dbc014c6, type: 3}
+  - {fileID: 4941105048918807395, guid: 4703a2d263e5c8442b7b9fb7055f6193, type: 3}
+  vida: 0
 --- !u!60 &-7935225329423555773
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -131,7 +134,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -180,7 +183,36 @@ PolygonCollider2D:
       - {x: 0.12, y: 0.225}
       - {x: 0.07, y: 0.225}
       - {x: 0.089999996, y: 0.195}
---- !u!50 &-5961939010710918902
+--- !u!70 &-7223431955344582556
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389949249019394416}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.41999996, y: 0.45000005}
+  m_Direction: 0
+--- !u!114 &1375900766571661342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389949249019394416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 004f37a1e51f78541b86dbba5735ce1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vida: 0
+--- !u!50 &-1521487917507615257
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -188,8 +220,8 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1389949249019394416}
-  m_BodyType: 0
-  m_Simulated: 0
+  m_BodyType: 1
+  m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
