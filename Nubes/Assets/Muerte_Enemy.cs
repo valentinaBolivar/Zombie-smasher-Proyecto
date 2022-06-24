@@ -8,12 +8,13 @@ public class Muerte_Enemy : MonoBehaviour
 
     private void OnMouseDown()
     {
+  
         vida--;
         if (vida <= 0)
         {
-            Destroy(gameObject);
-
-            
+            Destroy(gameObject); 
         }
     }
+
+  
 }

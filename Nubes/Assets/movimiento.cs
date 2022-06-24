@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class movimiento : MonoBehaviour
 {
-    private float velocidadMovimiento = 1;
-    private float velocidadAñadida = 2;
+    public float velocidadMovimiento;
     public Transform[] puntosMovimiento;
-    private float distanciaMin = 1;
+    public float distanciaMin;
     private int enOrden = 0; 
     private SpriteRenderer spriteRenderer;
-    public float vida;
-    private float cont = 5;
+  
+  
+
 
     // Start is called before the first frame update
     void Start()
@@ -32,29 +32,9 @@ public class movimiento : MonoBehaviour
             if(enOrden >= puntosMovimiento.Length)
             {
                 enOrden = 2;
+               // Destroy(gameObject);
             }
-            
         }
     }
-
-    private void OnMouseDown()
-    {
-        vida--;
-        if (vida <= 0)
-        {
-            Destroy(gameObject);
-
-            if (vida == 0)
-            {
-                cont = cont + 1;
-                if (cont == 10)
-                {
-                    velocidadMovimiento = (velocidadAñadida * velocidadMovimiento * Time.deltaTime);
-                }
-            }
-
-        }
-    }
-
 }
 

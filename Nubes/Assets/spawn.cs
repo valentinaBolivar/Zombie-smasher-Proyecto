@@ -22,12 +22,11 @@ public class spawn : MonoBehaviour
             var position = new Vector3(wanted, transform.position.y);
             GameObject gameObject = Instantiate(enemyPrefab[Random.Range(0, enemyPrefab.Length)], position, Quaternion.identity);
             yield return new WaitForSeconds(segundoSpawn);
-          
+            //Destroy(gameObject, 5f);
         }
 
+       
 
-        
     }
-
-
+   
 }
