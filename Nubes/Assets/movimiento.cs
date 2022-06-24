@@ -9,20 +9,13 @@ public class movimiento : MonoBehaviour
     public float distanciaMin;
     private int enOrden = 0; 
     private SpriteRenderer spriteRenderer;
-  
-  
+    //Muerte
+    public float vida;
 
-
-    // Start is called before the first frame update
     void Start()
     {
-        
         spriteRenderer = GetComponent<SpriteRenderer>();
-  
-
     }
-
-    // Update is called once per frame
     void Update()
     {
         transform.position = Vector2.MoveTowards(transform.position, puntosMovimiento[enOrden].position, velocidadMovimiento * Time.deltaTime);
@@ -34,6 +27,16 @@ public class movimiento : MonoBehaviour
                 enOrden = 2;
                // Destroy(gameObject);
             }
+        }
+    }
+    private void OnMouseDown()
+    {
+        spawn.Instance.marcador++;
+      
+        vida--;
+        if (vida <= 0)
+        {
+            Destroy(gameObject);
         }
     }
 }

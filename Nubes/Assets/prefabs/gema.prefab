@@ -11,9 +11,7 @@ GameObject:
   - component: {fileID: 5414813858877279464}
   - component: {fileID: 497525021889324191}
   - component: {fileID: 4063911004992852488}
-  - component: {fileID: 6439970869033276914}
   - component: {fileID: 1571412286261744048}
-  - component: {fileID: 229436985}
   m_Layer: 0
   m_Name: gema
   m_TagString: enemy
@@ -102,19 +100,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.0054800087, y: -0.0075525753}
   m_Size: {x: 0.19312912, y: 0.19312912}
   m_Direction: 0
---- !u!114 &6439970869033276914
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5114088152915074313}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 004f37a1e51f78541b86dbba5735ce1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vida: 0
 --- !u!114 &1571412286261744048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129,17 +114,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vel: 2
   direc: {x: -2.46, y: 2.44}
---- !u!114 &229436985
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5114088152915074313}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee7f3451f181afa438dbbe86d5f9ba4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vel: 4
-  direc: {x: 0, y: 0}

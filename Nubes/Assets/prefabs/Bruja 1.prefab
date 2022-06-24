@@ -12,11 +12,10 @@ GameObject:
   - component: {fileID: 4893251877808992726}
   - component: {fileID: 8717461777141186307}
   - component: {fileID: 1763092771618872977}
-  - component: {fileID: 8906943397578414595}
-  - component: {fileID: 1865042121003835926}
+  - component: {fileID: -8523215132422591373}
   m_Layer: 0
   m_Name: Bruja 1
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -121,20 +120,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0.02968467, y: -0.00574493}
   m_Size: {x: 0.26708937, y: 0.5}
   m_Direction: 0
---- !u!114 &8906943397578414595
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4694519833585204231}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 004f37a1e51f78541b86dbba5735ce1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vida: 2
---- !u!114 &1865042121003835926
+--- !u!114 &-8523215132422591373
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -152,3 +138,4 @@ MonoBehaviour:
   - {fileID: 1700901419000328252, guid: 863161bf2c465a04fae7c393dbc014c6, type: 3}
   - {fileID: 4941105048918807395, guid: 4703a2d263e5c8442b7b9fb7055f6193, type: 3}
   distanciaMin: 1
+  vida: 0

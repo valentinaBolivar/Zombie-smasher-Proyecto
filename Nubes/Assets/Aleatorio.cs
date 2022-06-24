@@ -6,7 +6,8 @@ public class Aleatorio : MonoBehaviour
 {
     public float vel;
     public Vector2 direc;
-    
+    public float vida;
+
 
     private void Start()
     {
@@ -21,6 +22,14 @@ public class Aleatorio : MonoBehaviour
         transform.Translate(direc * vel * Time.deltaTime);
         
     }
+    private void OnMouseDown()
+    {
 
+        vida--;
+        if (vida <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
 
 }

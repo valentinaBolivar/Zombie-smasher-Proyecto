@@ -12,11 +12,10 @@ GameObject:
   - component: {fileID: 825958415462129183}
   - component: {fileID: 3659554622330035037}
   - component: {fileID: 934075946740292408}
-  - component: {fileID: 2183132485843091402}
   - component: {fileID: 7245274913421577303}
   m_Layer: 0
   m_Name: Nube
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -121,19 +120,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: -0.002993824}
   m_Size: {x: 0.21620572, y: 0.21620572}
   m_Direction: 0
---- !u!114 &2183132485843091402
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2101376449876140967}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 004f37a1e51f78541b86dbba5735ce1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vida: 1
 --- !u!114 &7245274913421577303
 MonoBehaviour:
   m_ObjectHideFlags: 0
