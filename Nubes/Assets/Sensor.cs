@@ -11,9 +11,13 @@ public class Sensor : MonoBehaviour
         if (collision.tag == "enemy")
         {
             Destroy(collision.gameObject);
-
-         
         }
-        
+
+        if (collision.tag == "Human")
+        {
+
+            Destroy(collision.gameObject);
+        }
+
     }
 }

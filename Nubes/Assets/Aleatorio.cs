@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Aleatorio : MonoBehaviour
 {
@@ -24,11 +25,13 @@ public class Aleatorio : MonoBehaviour
     }
     private void OnMouseDown()
     {
-
+        
         vida--;
         if (vida <= 0)
         {
             Destroy(gameObject);
+            SceneManager.LoadScene("GameOver");
+
         }
     }
 

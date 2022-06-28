@@ -25,7 +25,6 @@ public class movimiento : MonoBehaviour
             if(enOrden >= puntosMovimiento.Length)
             {
                 enOrden = 2;
-               // Destroy(gameObject);
             }
         }
     }

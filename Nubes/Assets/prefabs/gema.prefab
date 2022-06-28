@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1571412286261744048}
   m_Layer: 0
   m_Name: gema
-  m_TagString: enemy
+  m_TagString: Human
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -114,3 +114,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vel: 2
   direc: {x: -2.46, y: 2.44}
+  vida: 0

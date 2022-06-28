@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class spawn : MonoBehaviour
 {
@@ -16,9 +17,7 @@ public class spawn : MonoBehaviour
     //Puntuacion
     public int marcador;
     public TMP_Text texto;
-    //Game Over
-    public TMP_Text Text;
-    public string perder;
+
 
     private void Update()
     {
@@ -26,6 +25,7 @@ public class spawn : MonoBehaviour
     }
     void Start()
     {
+        
         marcador = 0;
         StartCoroutine(EnemySpawn());
     }
@@ -44,16 +44,11 @@ public class spawn : MonoBehaviour
             var position = new Vector3(wanted, transform.position.y);
             GameObject gameObject = Instantiate(enemyPrefab[Random.Range(0, enemyPrefab.Length)], position, Quaternion.identity);
             yield return new WaitForSeconds(segundoSpawn);
-            //Destroy(gameObject, 5f);
         }
     }
     void Puntaje()
-    {
+    { 
         texto.text = marcador.ToString();
-
     }
-    void Perder()
-    {
-       
-    }
+   
 }

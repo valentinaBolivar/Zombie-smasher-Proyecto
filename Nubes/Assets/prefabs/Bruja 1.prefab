@@ -138,4 +138,4 @@ MonoBehaviour:
   - {fileID: 1700901419000328252, guid: 863161bf2c465a04fae7c393dbc014c6, type: 3}
   - {fileID: 4941105048918807395, guid: 4703a2d263e5c8442b7b9fb7055f6193, type: 3}
   distanciaMin: 1
-  vida: 0
+  vida: 3
