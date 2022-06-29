@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2101376449876140967
+--- !u!1 &5098583156583949294
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,43 +8,43 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7812559802302438731}
-  - component: {fileID: 825958415462129183}
-  - component: {fileID: 3659554622330035037}
-  - component: {fileID: 934075946740292408}
-  - component: {fileID: 7245274913421577303}
+  - component: {fileID: 516820716173650072}
+  - component: {fileID: 5098583156583949295}
+  - component: {fileID: 1126059043133981383}
+  - component: {fileID: 5098583156583949288}
+  - component: {fileID: 4739389230098901851}
   m_Layer: 0
   m_Name: Nube
-  m_TagString: enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7812559802302438731
+--- !u!4 &516820716173650072
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2101376449876140967}
+  m_GameObject: {fileID: 5098583156583949294}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.59, y: 5.55, z: -124.541695}
-  m_LocalScale: {x: 4.450543, y: 4.450543, z: 4.450543}
+  m_LocalPosition: {x: -0.42, y: 2.9962013, z: -34.460896}
+  m_LocalScale: {x: 2.4104688, y: 2.4104688, z: 2.4104688}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &825958415462129183
+--- !u!95 &5098583156583949295
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2101376449876140967}
+  m_GameObject: {fileID: 5098583156583949294}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ecb142f305b25e848ac5d894e8f34697, type: 2}
+  m_Controller: {fileID: 9100000, guid: db626f6ca672c8842866b1364fd9f7de, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -53,13 +53,13 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!212 &3659554622330035037
+--- !u!212 &1126059043133981383
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2101376449876140967}
+  m_GameObject: {fileID: 5098583156583949294}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -104,37 +104,39 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!70 &934075946740292408
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2101376449876140967}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 1
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.002993824}
-  m_Size: {x: 0.21620572, y: 0.21620572}
-  m_Direction: 0
---- !u!114 &7245274913421577303
+--- !u!114 &5098583156583949288
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2101376449876140967}
+  m_GameObject: {fileID: 5098583156583949294}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2a300d2becd9d5a45954864ef3e519fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadMovimiento: 3
+  velocidadMovimiento: 2
   puntosMovimiento:
   - {fileID: 3215031490294020641, guid: 39f6d75fed4409b4a8f90f4f3c6028c7, type: 3}
   - {fileID: 7494396596266257644, guid: b081d272e62b28b479156f21a55371bb, type: 3}
   - {fileID: 6807814039986055341, guid: 4fffd43d2990fa84eaf4cde7de06ef49, type: 3}
-  distanciaMin: 2
+  distanciaMin: 1
+  animacion: {fileID: 5098583156583949295}
+  vida: 1
+--- !u!70 &4739389230098901851
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5098583156583949294}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.17999999, y: 0.15999998}
+  m_Direction: 0

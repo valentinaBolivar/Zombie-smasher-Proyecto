@@ -17,15 +17,18 @@ public class spawn : MonoBehaviour
     //Puntuacion
     public int marcador;
     public TMP_Text texto;
-
+    //vida
+    public int vida;
+    public TMP_Text textoVida;
 
     private void Update()
     {
+        Vida();
         Puntaje();
     }
     void Start()
     {
-        
+        vida = 3;
         marcador = 0;
         StartCoroutine(EnemySpawn());
     }
@@ -50,5 +53,9 @@ public class spawn : MonoBehaviour
     { 
         texto.text = marcador.ToString();
     }
-   
+   void Vida()
+    {
+        textoVida.text = vida.ToString("vida: " + vida);
+            
+    }
 }

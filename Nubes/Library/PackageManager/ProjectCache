@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637917012665664499
+      ticks: 637920352099428513
     m_Hash: 3606532961
   m_LockFileStatus:
     m_FilePath: D:/valentina/Zombie-smasher-Proyecto/Nubes/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637917012665674471
+      ticks: 637920352099438191
     m_Hash: 2169045942
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -549,6 +549,7 @@ m_PackageAssets:
         - 7.0.2
         - 7.0.3
         - 7.0.4
+        - 7.0.5
         - 8.0.0-pre.4
         - 8.0.0-pre.5
         - 8.0.0
@@ -736,6 +737,8 @@ m_PackageAssets:
         - 1.15.16
         - 1.15.17
         - 1.15.18
+        - 1.17.0
+        - 1.17.1
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -772,6 +775,8 @@ m_PackageAssets:
         - 1.15.16
         - 1.15.17
         - 1.15.18
+        - 1.17.0
+        - 1.17.1
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -871,6 +876,7 @@ m_PackageAssets:
         - 3.0.12
         - 3.0.13
         - 3.0.14
+        - 3.0.15
         compatible:
         - 1.0.2
         - 1.0.6
@@ -902,6 +908,7 @@ m_PackageAssets:
         - 3.0.12
         - 3.0.13
         - 3.0.14
+        - 3.0.15
         verified: 2.0.7
       dependencies:
       - name: com.unity.test-framework
@@ -976,6 +983,7 @@ m_PackageAssets:
         - 2.0.12
         - 2.0.14
         - 2.0.15
+        - 2.0.16
         compatible:
         - 1.0.2
         - 1.0.3
@@ -995,7 +1003,8 @@ m_PackageAssets:
         - 2.0.12
         - 2.0.14
         - 2.0.15
-        verified: 2.0.15
+        - 2.0.16
+        verified: 2.0.16
       dependencies:
       - name: com.unity.test-framework
         version: 1.1.9
@@ -3515,12 +3524,17 @@ m_PackageAssets:
         - 2.0.1
         - 2.0.2
         - 2.1.0
+        - 2.1.1
+        - 2.1.2
         - 3.0.0
         - 3.0.1
         - 4.0.0
         - 4.0.1
         - 4.0.2
         - 4.0.3
+        - 4.0.4
+        - 4.1.0
+        - 4.2.0
         - 5.0.0-pre.1
         - 5.0.0-pre.2
         - 5.0.0
@@ -3528,10 +3542,18 @@ m_PackageAssets:
         - 6.0.0-pre.3
         - 6.0.0-pre.4
         - 6.0.0
+        - 6.0.1
+        - 6.0.2
+        - 6.0.3
         - 7.0.0-pre.3
+        - 7.0.0-pre.4
+        - 7.0.0
+        - 8.0.0-pre.1
+        - 8.0.0-pre.2
         compatible:
         - 4.0.3
-        verified: 4.0.3
+        - 4.0.4
+        verified: 4.0.4
       dependencies:
       - name: com.unity.2d.sprite
         version: 1.0.0

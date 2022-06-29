@@ -9,6 +9,10 @@ public class movimiento : MonoBehaviour
     public float distanciaMin;
     private int enOrden = 0; 
     private SpriteRenderer spriteRenderer;
+
+    public GameObject[] sprite; 
+   // public Animator animacion;
+  
     //Muerte
     public float vida;
 
@@ -18,6 +22,7 @@ public class movimiento : MonoBehaviour
     }
     void Update()
     {
+        
         transform.position = Vector2.MoveTowards(transform.position, puntosMovimiento[enOrden].position, velocidadMovimiento * Time.deltaTime);
         if (Vector2.Distance(transform.position, puntosMovimiento[enOrden].position) < distanciaMin)
         {
@@ -31,12 +36,30 @@ public class movimiento : MonoBehaviour
     private void OnMouseDown()
     {
         spawn.Instance.marcador++;
-      
+
         vida--;
         if (vida <= 0)
         {
-            Destroy(gameObject);
+            GetComponent<CapsuleCollider2D>().enabled = false;
+            velocidadMovimiento = 0;
+            //animacion.SetBool("muerte", true);
+            sprite[0].SetActive(false);
+            sprite[1].SetActive(true);
+
+            if(sprite[1] == true)
+            {
+                Destroy(gameObject, 4f);
+            
+            }
+            
         }
+        
     }
+
+    /*public void MyOnDestroy() 
+    {
+        Destroy(gameObject);
+    }
+    */
 }
 

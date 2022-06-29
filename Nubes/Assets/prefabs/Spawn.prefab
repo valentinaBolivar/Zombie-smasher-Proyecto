@@ -44,11 +44,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab:
-  - {fileID: 4694519833585204231, guid: 2840f21960c3a134996efdd6ed8cc331, type: 3}
-  - {fileID: 2101376449876140967, guid: 7eca6ca936641db47ad7e31872663b30, type: 3}
-  - {fileID: 6390321244930379875, guid: 6464967a08be3384e84e39ca72048eb2, type: 3}
+  - {fileID: 3691188413043118989, guid: 2840f21960c3a134996efdd6ed8cc331, type: 3}
+  - {fileID: 7020446932233916262, guid: 7eca6ca936641db47ad7e31872663b30, type: 3}
+  - {fileID: 586724514092999501, guid: 6464967a08be3384e84e39ca72048eb2, type: 3}
   - {fileID: 5114088152915074313, guid: 7bf877a455ec38c4299c267462299b4d, type: 3}
   segundoSpawn: 1
   bordeMin: -2.46
   bordeMax: 2.44
   velocidadJuego: 3
+  marcador: 0
+  texto: {fileID: 0}
+  vida: 0
+  textoVida: {fileID: 0}

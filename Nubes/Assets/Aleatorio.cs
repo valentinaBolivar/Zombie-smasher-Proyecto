@@ -30,7 +30,11 @@ public class Aleatorio : MonoBehaviour
         if (vida <= 0)
         {
             Destroy(gameObject);
-            SceneManager.LoadScene("GameOver");
+            spawn.Instance.vida--;
+            if(spawn.Instance.vida == 0)
+            {
+                SceneManager.LoadScene("GameOver");
+            }
 
         }
     }
