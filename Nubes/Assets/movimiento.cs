@@ -9,8 +9,8 @@ public class movimiento : MonoBehaviour
     public float distanciaMin;
     private int enOrden = 0; 
     private SpriteRenderer spriteRenderer;
-
-    public GameObject[] sprite; 
+    public GameObject[] sprite;
+    private AudioSource SonidoM;
    // public Animator animacion;
   
     //Muerte
@@ -18,11 +18,11 @@ public class movimiento : MonoBehaviour
 
     void Start()
     {
+        SonidoM = GetComponent<AudioSource>();
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
     void Update()
     {
-        
         transform.position = Vector2.MoveTowards(transform.position, puntosMovimiento[enOrden].position, velocidadMovimiento * Time.deltaTime);
         if (Vector2.Distance(transform.position, puntosMovimiento[enOrden].position) < distanciaMin)
         {
@@ -36,7 +36,7 @@ public class movimiento : MonoBehaviour
     private void OnMouseDown()
     {
         spawn.Instance.marcador++;
-
+        SonidoM.Play();
         vida--;
         if (vida <= 0)
         {
@@ -48,7 +48,7 @@ public class movimiento : MonoBehaviour
 
             if(sprite[1] == true)
             {
-                Destroy(gameObject, 4f);
+                Destroy(gameObject, 2f);
             
             }
             

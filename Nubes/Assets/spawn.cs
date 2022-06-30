@@ -58,4 +58,6 @@ public class spawn : MonoBehaviour
         textoVida.text = vida.ToString("vida: " + vida);
             
     }
+
+   
 }

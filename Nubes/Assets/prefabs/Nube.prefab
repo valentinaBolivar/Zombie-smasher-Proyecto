@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 516820716173650072}
   - component: {fileID: 5098583156583949295}
   - component: {fileID: 1126059043133981383}
-  - component: {fileID: 5098583156583949288}
-  - component: {fileID: 4739389230098901851}
   m_Layer: 0
   m_Name: Nube
   m_TagString: Untagged
@@ -104,39 +102,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5098583156583949288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5098583156583949294}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a300d2becd9d5a45954864ef3e519fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidadMovimiento: 2
-  puntosMovimiento:
-  - {fileID: 3215031490294020641, guid: 39f6d75fed4409b4a8f90f4f3c6028c7, type: 3}
-  - {fileID: 7494396596266257644, guid: b081d272e62b28b479156f21a55371bb, type: 3}
-  - {fileID: 6807814039986055341, guid: 4fffd43d2990fa84eaf4cde7de06ef49, type: 3}
-  distanciaMin: 1
-  animacion: {fileID: 5098583156583949295}
-  vida: 1
---- !u!70 &4739389230098901851
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5098583156583949294}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.17999999, y: 0.15999998}
-  m_Direction: 0

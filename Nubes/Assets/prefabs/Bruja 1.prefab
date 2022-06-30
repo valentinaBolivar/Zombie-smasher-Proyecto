@@ -11,9 +11,6 @@ GameObject:
   - component: {fileID: 5178838712261022415}
   - component: {fileID: 3600528998464446044}
   - component: {fileID: 785123770815582345}
-  - component: {fileID: 7667439030530797851}
-  - component: {fileID: 8910512990110974969}
-  - component: {fileID: 7828984930506658212}
   m_Layer: 0
   m_Name: Bruja 1
   m_TagString: enemy
@@ -105,60 +102,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!70 &7667439030530797851
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3691188413043118989}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.02968467, y: -0.00574493}
-  m_Size: {x: 0.26708937, y: 0.5}
-  m_Direction: 0
---- !u!114 &8910512990110974969
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3691188413043118989}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a300d2becd9d5a45954864ef3e519fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidadMovimiento: 1
-  puntosMovimiento:
-  - {fileID: 1921954961544872533, guid: 3d3b580719100154198bdf3a5bfbfa40, type: 3}
-  - {fileID: 1700901419000328252, guid: 863161bf2c465a04fae7c393dbc014c6, type: 3}
-  - {fileID: 4941105048918807395, guid: 4703a2d263e5c8442b7b9fb7055f6193, type: 3}
-  distanciaMin: 1
-  animacion: {fileID: 3600528998464446044}
-  vida: 3
---- !u!50 &7828984930506658212
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3691188413043118989}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
