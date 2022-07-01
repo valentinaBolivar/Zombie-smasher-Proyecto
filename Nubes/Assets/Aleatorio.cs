@@ -9,7 +9,6 @@ public class Aleatorio : MonoBehaviour
     public Vector2 direc;
     public float vida;
     public GameObject[] sprite;
-    public float velocidadMovimiento;
     private AudioSource SonidoM;
 
     private void Start()
@@ -23,28 +22,24 @@ public class Aleatorio : MonoBehaviour
 
     private void Update()
     {
-        velocidadMovimiento = velocidadMovimiento * Time.deltaTime;
         transform.Translate(direc * vel * Time.deltaTime);
-        
+        curvaDif();
     }
     private void OnMouseDown()
     {
-        SonidoM.Play();
+        
         vida--;
         if (vida <= 0)
         {
+            SonidoM.Play();
             GetComponent<CapsuleCollider2D>().enabled = false;
-            velocidadMovimiento = 0;
-            //animacion.SetBool("muerte", true);
             sprite[0].SetActive(false);
             sprite[1].SetActive(true);
-
+            vel = 0;
             if (sprite[1] == true)
             {
-                Destroy(gameObject, 2f);
-
+                Destroy(gameObject, 0.2f);
             }
-    
             spawn.Instance.vida--;
             if(spawn.Instance.vida == 0)
             {
@@ -53,5 +48,15 @@ public class Aleatorio : MonoBehaviour
 
         }
     }
-
+    public void curvaDif()
+    {
+        if (spawn.Instance.marcador >= 10)
+        {
+            vel = vel + 00.5f * Time.deltaTime;
+        }
+        if (spawn.Instance.marcador >= 30)
+        {
+            vel = vel + 00.5f * Time.deltaTime;
+        }
+    }
 }

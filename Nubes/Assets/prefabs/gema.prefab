@@ -113,9 +113,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee7f3451f181afa438dbbe86d5f9ba4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vel: 2
-  direc: {x: -2.46, y: 2.44}
+  vel: 0
+  direc: {x: -2.46, y: 0}
   vida: 0
+  sprite: []
+  velocidadMovimiento: 0
 --- !u!50 &8683506161432241201
 Rigidbody2D:
   serializedVersion: 4
@@ -125,7 +127,7 @@ Rigidbody2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5114088152915074313}
   m_BodyType: 1
-  m_Simulated: 1
+  m_Simulated: 0
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1

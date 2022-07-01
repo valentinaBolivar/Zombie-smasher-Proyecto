@@ -7,12 +7,12 @@ public class movimiento : MonoBehaviour
     public float velocidadMovimiento;
     public Transform[] puntosMovimiento;
     public float distanciaMin;
-    private int enOrden = 0; 
+    private int enOrden = 0;
     private SpriteRenderer spriteRenderer;
     public GameObject[] sprite;
     private AudioSource SonidoM;
-   // public Animator animacion;
-  
+    // public Animator animacion;
+
     //Muerte
     public float vida;
 
@@ -27,39 +27,49 @@ public class movimiento : MonoBehaviour
         if (Vector2.Distance(transform.position, puntosMovimiento[enOrden].position) < distanciaMin)
         {
             enOrden += 1;
-            if(enOrden >= puntosMovimiento.Length)
+            if (enOrden >= puntosMovimiento.Length)
             {
                 enOrden = 2;
             }
         }
+        curvaDif();
     }
     private void OnMouseDown()
     {
         spawn.Instance.marcador++;
-        SonidoM.Play();
+       
         vida--;
         if (vida <= 0)
         {
+            SonidoM.Play();
             GetComponent<CapsuleCollider2D>().enabled = false;
-            velocidadMovimiento = 0;
-            //animacion.SetBool("muerte", true);
             sprite[0].SetActive(false);
             sprite[1].SetActive(true);
-
-            if(sprite[1] == true)
+            if (sprite[1] == (true))
             {
-                Destroy(gameObject, 2f);
-            
+                velocidadMovimiento = 0;
             }
-            
-        }
-        
-    }
+           
+            if (sprite[1] == true)
+            {
+                Destroy(gameObject, 0.2f);
+               
+            }
 
-    /*public void MyOnDestroy() 
-    {
-        Destroy(gameObject);
+        }
+
+
     }
-    */
+    public void curvaDif()
+    {
+        if (spawn.Instance.marcador >= 10)
+        {
+            velocidadMovimiento = velocidadMovimiento + 00.5f * Time.deltaTime;
+        }
+        if (spawn.Instance.marcador >= 30)
+        {
+            velocidadMovimiento = velocidadMovimiento + 00.5f * Time.deltaTime;
+        }
+    }
 }
 

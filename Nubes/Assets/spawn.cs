@@ -10,7 +10,7 @@ public class spawn : MonoBehaviour
     public static spawn Instance;
     //Spawn
     public GameObject[] enemyPrefab;
-    public float segundoSpawn = -0.5f;
+    public float segundoSpawn;
     public float bordeMin;
     public float bordeMax;
     public float velocidadJuego = 3;
@@ -23,6 +23,7 @@ public class spawn : MonoBehaviour
 
     private void Update()
     {
+        curvaDificultad();
         Vida();
         Puntaje();
     }
@@ -58,6 +59,8 @@ public class spawn : MonoBehaviour
         textoVida.text = vida.ToString("vida: " + vida);
             
     }
-
-   
+   void curvaDificultad()
+    {
+        
+    }
 }

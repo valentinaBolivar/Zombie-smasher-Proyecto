@@ -277,7 +277,7 @@ MonoBehaviour:
   sprite:
   - {fileID: 1164914818687973564}
   - {fileID: 1555305825301567626}
-  vida: 2
+  vida: 3
 --- !u!82 &2149309321673851106
 AudioSource:
   m_ObjectHideFlags: 0
